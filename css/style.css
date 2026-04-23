@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text: #1a1a1a;
+  --muted: #888;
+  --bg: #faf9f7;
+  --border: #ddd;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  padding: 0 1.5rem;
+}
+
+.container {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+/* ── NAVIGATION ── */
+
+nav {
+  padding: 2.5rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3.5rem;
+}
+
+.nav-logo {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.8rem;
+}
+
+.nav-links a {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text);
+}
+
+/* ── PHOTO ── */
+
+.photo {
+  background: #e8e6e2;
+  margin-bottom: 2.5rem;
+  min-height: 240px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── TEXT ── */
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 2.5rem;
+}
+
+.poem p {
+  margin-bottom: 0.45rem;
+}
+
+.poem .gap {
+  margin-top: 1.2rem;
+}
+
+.poem .big-gap {
+  margin-top: 2rem;
+}
+
+.poem strong {
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ── HOMEPAGE NAV LIST ── */
+
+.page-links {
+  list-style: none;
+  margin: 2.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.page-links li {
+  border-bottom: 1px solid var(--border);
+}
+
+.page-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.9rem 0;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  transition: letter-spacing 0.2s;
+}
+
+.page-links a:hover {
+  letter-spacing: 0.04em;
+}
+
+.page-links .hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: right;
+  max-width: 55%;
+}
+
+/* ── KONTAKT ── */
+
+.kontakt-block {
+  margin-bottom: 0.5rem;
+  line-height: 2;
+}
+
+.kontakt-block a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.kontakt-block a:hover {
+  border-bottom-color: var(--text);
+}
+
+/* ── ŽITO SUBPAGES ── */
+
+.zito-links {
+  list-style: none;
+  margin: 2.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.zito-links li {
+  border-bottom: 1px solid var(--border);
+}
+
+.zito-links a {
+  display: block;
+  padding: 0.8rem 0;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.zito-links a:hover {
+  letter-spacing: 0.06em;
+  transition: letter-spacing 0.2s;
+}
+
+/* ── FOOTER ── */
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0 3rem;
+  margin-top: 5rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+}
+
+/* ── LINKS IN TEXT ── */
+
+.poem a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.poem a:hover {
+  border-bottom-color: var(--text);
+}
+
+/* ── MOBILE ── */
+
+@media (max-width: 500px) {
+  html { font-size: 17px; }
+  .page-links .hint { display: none; }
+}
