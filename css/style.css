@@ -123,7 +123,10 @@ h2 {
 }
 
 .poem strong {
-  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 0.92em;
+  letter-spacing: 0.01em;
 }
 
 .poem em {
