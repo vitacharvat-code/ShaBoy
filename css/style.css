@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Space+Grotesk:wght@300;400&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -14,19 +14,19 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 body {
   font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.75;
+  line-height: 1.8;
   padding: 0 1.5rem;
 }
 
 .container {
-  max-width: 660px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -40,8 +40,10 @@ nav {
 
 .nav-logo {
   display: block;
-  font-size: 1rem;
-  letter-spacing: 0.12em;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text);
@@ -56,8 +58,10 @@ nav {
 }
 
 .nav-links a {
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--muted);
@@ -67,6 +71,27 @@ nav {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--text);
+}
+
+/* ── HEADINGS ── */
+
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 2.5rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2.5rem 0 0.8rem;
 }
 
 /* ── PHOTO ── */
@@ -83,30 +108,38 @@ nav {
   display: block;
 }
 
-/* ── TEXT ── */
-
-h1 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  margin-bottom: 2.5rem;
-}
+/* ── TEXT / POEM ── */
 
 .poem p {
   margin-bottom: 0.45rem;
 }
 
 .poem .gap {
-  margin-top: 1.2rem;
+  margin-top: 1.4rem;
 }
 
 .poem .big-gap {
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 }
 
 .poem strong {
   font-weight: 500;
-  font-style: normal;
+}
+
+.poem em {
+  font-style: italic;
+}
+
+/* ── LINKS IN TEXT ── */
+
+.poem a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.poem a:hover {
+  border-bottom-color: var(--text);
 }
 
 /* ── HOMEPAGE NAV LIST ── */
@@ -138,54 +171,11 @@ h1 {
 }
 
 .page-links .hint {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--muted);
   font-style: italic;
   text-align: right;
   max-width: 55%;
-}
-
-/* ── KONTAKT ── */
-
-.kontakt-block {
-  margin-bottom: 0.5rem;
-  line-height: 2;
-}
-
-.kontakt-block a {
-  color: var(--text);
-  text-decoration: none;
-  border-bottom: 1px solid var(--border);
-}
-
-.kontakt-block a:hover {
-  border-bottom-color: var(--text);
-}
-
-/* ── ŽITO SUBPAGES ── */
-
-.zito-links {
-  list-style: none;
-  margin: 2.5rem 0;
-  border-top: 1px solid var(--border);
-}
-
-.zito-links li {
-  border-bottom: 1px solid var(--border);
-}
-
-.zito-links a {
-  display: block;
-  padding: 0.8rem 0;
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
-}
-
-.zito-links a:hover {
-  letter-spacing: 0.06em;
-  transition: letter-spacing 0.2s;
 }
 
 /* ── FOOTER ── */
@@ -195,25 +185,26 @@ footer {
   padding: 2rem 0 3rem;
   margin-top: 5rem;
   color: var(--muted);
-  font-size: 0.82rem;
-  letter-spacing: 0.05em;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
 }
 
-/* ── LINKS IN TEXT ── */
-
-.poem a {
-  color: var(--text);
+footer a {
+  color: inherit;
   text-decoration: none;
   border-bottom: 1px solid var(--border);
 }
 
-.poem a:hover {
-  border-bottom-color: var(--text);
+footer a:hover {
+  border-bottom-color: var(--muted);
 }
 
 /* ── MOBILE ── */
 
 @media (max-width: 500px) {
-  html { font-size: 17px; }
+  html { font-size: 18px; }
   .page-links .hint { display: none; }
+  h1 { font-size: 1.3rem; }
 }
