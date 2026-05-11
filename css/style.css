@@ -40,8 +40,6 @@ nav {
 
 .nav-logo {
   display: block;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
   font-size: 0.85rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -58,8 +56,6 @@ nav {
 }
 
 .nav-links a {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 300;
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
